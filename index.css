@@ -21,12 +21,24 @@
     gap: 40px;
 }
 
+.cabecalho__lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
 .cabecalho__navegacao--item {
     color: var(--branco);
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.banner__figure--wrapper{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
 }
 
 .banner__img {
@@ -62,9 +74,20 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-align: center;
     margin-bottom: 64px;
+}
+
+.depoimentos__titulo--texto,
+.pagamento__titulo--texto,
+.destinos__titulo--texto,
+.busca__titulo--texto,
+.ofertas__titulo--texto {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    text-align: center;
+    margin: 0;
 }
 
 .depoimentos__titulo--sublinhado,
@@ -73,10 +96,19 @@
 .busca__titulo--sublinhado,
 .ofertas__titulo--sublinhado {
     width: 180px;
-    height: 4px;
+    height: 7px;
     background: var(--vermelho);
     margin: 0 auto;
     margin-top: 16px;
+}
+
+.busca__categoria--botao{
+    display: flex;
+    flex-direction: column;
+}
+
+.busca__categoria--nome{
+    color: #222;
 }
 
 img {
@@ -151,6 +183,8 @@ img {
 
 .destinos__item--botao,
 .ofertas__card--botao {
+    max-height: 64px;
+    margin: 0;
     border-radius: 8px;
     background: var(--vermelho, #B81515);
     padding: 16px 48px;
@@ -160,6 +194,7 @@ img {
 
 .destinos__item--botao-texto,
 .ofertas__card--botao-texto {
+    margin: 0;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -203,6 +238,7 @@ span.material-symbols-outlined {
     align-items: stretch;
     gap: 24px;
     margin-bottom: 112px;
+    padding: 0;
 }
 
 .destinos__item {
@@ -231,6 +267,7 @@ span.material-symbols-outlined {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    margin-top: 0;
     margin-bottom: 24px;
 }
 
@@ -242,6 +279,14 @@ span.material-symbols-outlined {
 .pagamento__condicoes {
     display: flex;
     gap: 24px;
+}
+
+.pagamento__imagens--imagem-container{
+    margin: 0;
+}
+
+.pagamento__imagens--imagem-destaque{
+    margin: 0;
 }
 
 .pagamento__condicoes--destaque {
@@ -290,6 +335,10 @@ span.material-symbols-outlined {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.depoimentos__autor--avaliacao{
+    margin: 0;
 }
 
 .depoimentos__texto {

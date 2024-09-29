@@ -17,281 +17,339 @@
 </head>
 
 <body>
-    <div class="cabecalho__container">
+    <!--Classes de elementos B.E.M (Bloco, Elemento, Modificador)-->
+    <header class="cabecalho__container">
         <div class="cabecalho">
-            <a href="" class="cabecalho__logo">
-                <img class="cabecalho__logo--icone" alt="" src="./img/logoprovisriabranca-1@2x.png" />
+            <a href="#" class="cabecalho__logo" aria-label="Página inicial">
+                <img class="cabecalho__logo--icone" alt="Logotipo da Jornada"
+                    src="./img/logoprovisriabranca-1@2x.png" />
             </a>
-            <div class="cabecalho__navegacao">
-                <a class="cabecalho__navegacao--item" href="">Blog</a>
-                <a class="cabecalho__navegacao--item" href="">Pacotes de viagem</a>
-                <a class="cabecalho__navegacao--item" href="">Contato</a>
-            </div>
+            <nav class="cabecalho__navegacao" aria-label="Menu de navegação">
+                <ul class="cabecalho__lista">
+                    <li><a class="cabecalho__navegacao--item" href="#" aria-label="Blog">Blog</a></li>
+                    <li><a class="cabecalho__navegacao--item" href="#" aria-label="Pacotes de viagem">Pacotes de
+                            viagem</a></li>
+                    <li><a class="cabecalho__navegacao--item" href="#" aria-label="Contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="banner">
+    <section class="banner" aria-label="Banner promocional da agência de viagens">
         <div class="banner__wrapper">
-            <img class="banner__img" alt="" src="./img/maldivas@2x.png" />
-            <div class="banner__descricao">
-                Somos uma agência apaixonada por criar viagens inesquecíveis. Do
-                destino à seleção das atividades, cuidamos de todos os detalhes
-                para que você aproveite ao máximo cada momento da sua jornada!
-            </div>
+            <figure class="banner__figure--wrapper">
+                <img class="banner__img" src="./img/maldivas@2x.png" alt="Homem navegando numa canoa" />
+                <figcaption class="banner__descricao">
+                    Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades,
+                    cuidamos de todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!
+                </figcaption>
+            </figure>
         </div>
-    </div>
-    <div class="container">
+    </section>
 
-        <div class="ofertas">
+    <main class="container">
+
+        <section class="ofertas">
             <div class="ofertas__titulo">
                 <div class="ofertas__titulo--texto">Ofertas da semana</div>
                 <div class="ofertas__titulo--sublinhado"></div>
             </div>
             <div class="ofertas__cards">
                 <div class="ofertas__cards--grupo">
-                    <div class="ofertas__cards--item ofertas__cards--japao">
-                        <div class="ofertas__card">
-                            <div class="ofertas__card--conteudo">
+
+                    <section class="ofertas__cards--item ofertas__cards--japao"
+                        aria-label="Oferta de viagem para o Japão">
+                        <article class="ofertas__card">
+                            <header class="ofertas__card--conteudo">
                                 <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">Japão</b>
+                                    <p class="ofertas__card--destino-tipo">HOTEL + AÉREO</p>
+                                    <strong class="ofertas__card--destino-nome">Japão</strong>
                                 </div>
-                                <div class="ofertas__card--preco">R$ 4000</div>
-                                <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
-                                </div>
+                            </header>
+                            <div class="ofertas__card--preco" aria-label="Preço da oferta">
+                                R$ 4000
                             </div>
-                        </div>
-                    </div>
-                    <div class="ofertas__cards--item  ofertas__cards--san-andreas">
-                        <div class="ofertas__card">
-                            <div class="ofertas__card--conteudo">
+                            <div class="ofertas__card--botao">
+                                <a href="#" class="ofertas__card--botao-texto"
+                                    aria-label="Ver detalhes da oferta para o Japão">
+                                    Ver detalhes
+                                </a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="ofertas__cards--item  ofertas__cards--san-andreas"
+                        aria-label="Oferta de viagem para San Andreas">
+                        <article class="ofertas__card">
+                            <header class="ofertas__card--conteudo">
                                 <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">San Andreas</b>
+                                    <p class="ofertas__card--destino-tipo">HOTEL+AÉREO</p>
+                                    <strong class="ofertas__card--destino-nome">San Andreas</strong>
                                 </div>
-                                <div class="ofertas__card--preco">R$ 3000</div>
-                                <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
-                                </div>
+                            </header>
+                            <div class="ofertas__card--preco">
+                                R$ 3000
                             </div>
-                        </div>
-                    </div>
-                    <div class="ofertas__cards--item  ofertas__cards--paraiba">
-                        <div class="ofertas__card">
-                            <div class="ofertas__card--conteudo">
+                            <div class="ofertas__card--botao">
+                                <a href="#" class="ofertas__card--botao-texto"
+                                    aria-label="Ver detalhes da oferta para San Andreas">
+                                    Ver detalhes
+                                </a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="ofertas__cards--item  ofertas__cards--paraiba"
+                        aria-label="Oferta de viagem para Paraíba">
+                        <article class="ofertas__card">
+                            <header class="ofertas__card--conteudo">
                                 <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">Paraíba</b>
+                                    <p class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</p>
+                                    <strong class="ofertas__card--destino-nome">Paraíba</strong>
                                 </div>
-                                <div class="ofertas__card--preco">R$ 1200</div>
-                                <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
-                                </div>
+                            </header>
+                            <div class="ofertas__card--preco">
+                                R$ 1200
                             </div>
-                        </div>
-                    </div>
-                    <div class="ofertas__cards--item  ofertas__cards--manaus">
-                        <div class="ofertas__card">
-                            <div class="ofertas__card--conteudo">
+                            <div class="ofertas__card--botao">
+                                <a href="#" class="ofertas__card--botao-texto"
+                                    aria-label="Ver detalhes da oferta para Paraíba">
+                                    Ver detalhes
+                                </a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="ofertas__cards--item  ofertas__cards--manaus"
+                        aria-label="Oferta de viagem para Manaus">
+                        <article class="ofertas__card">
+                            <header class="ofertas__card--conteudo">
                                 <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">Manaus</b>
+                                    <p class="ofertas__card--destino-tipo">ALL INCLUSIVE+AÉREO</p>
+                                    <strong class="ofertas__card--destino-nome">Manaus</strong>
                                 </div>
-                                <div class="ofertas__card--preco">R$ 1600</div>
-                                <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
-                                </div>
+                            </header>
+                            <div class="ofertas__card--preco">
+                                R$ 1600
                             </div>
-                        </div>
-                    </div>
+                            <div class="ofertas__card--botao">
+                                <a href="#" class="ofertas__card--botao-texto"
+                                    aria-label="Ver detalhes da oferta para Manaus">
+                                    Ver detalhes
+                                </a>
+                            </div>
+                        </article>
+                    </section>
+
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="busca">
-            <div class="busca__titulo">
-                <div class="divusca__titulo--texto">Busque por Categoria</div>
-                <div class="busca__titulo--sublinhado"></div>
-            </div>
-            <div class="busca__categorias">
-                <div class="busca__categoria">
-                    <div class="busca__categoria--icone">
+        <section class="busca">
+            <header class="busca__titulo">
+                <h3 class="busca__titulo--texto">Busque por Categoria</h3>
+                <hr class="busca__titulo--sublinhado" aria-hidden="true">
+            </header>
+            <ul class="busca__categorias">
+                <li class="busca__categoria">
+                    <a href="#" class="busca__categoria--botao" aria-label="Buscar por Pacotes Nacionais">
                         <span class="material-symbols-outlined">
                             hiking
                         </span>
-                    </div>
-                    <b class="busca__categoria--nome">Pacotes Nacionais</b>
-                </div>
-                <div class="busca__categoria">
-                    <div class="busca__categoria--icone">
+                        <strong class="busca__categoria--nome">Pacotes Nacionais</strong>
+                    </a>
+                </li>
+                <li class="busca__categoria">
+                    <a href="#" class="busca__categoria--botao" aria-label="Buscar por Pacotes Internacionais">
                         <span class="material-symbols-outlined">
                             flight
                         </span>
-                    </div>
-                    <b class="busca__categoria--nome">Pacotes Internacionais</b>
-                </div>
-                <div class="busca__categoria">
-                    <div class="busca__categoria--icone">
-                        <span class="material-symbols-outlined">
+                        <strong class="busca__categoria--nome">Pacotes Internacionais</strong>
+                    </a>
+                </li>
+                <li class="busca__categoria">
+                    <a href="#" class="busca__categoria--botao">
+                        <span class="material-symbols-outlined" aria-label="Buscar por Transfer">
                             airport_shuttle
                         </span>
-                    </div>
-                    <b class="busca__categoria--nome">Transfer</b>
-                </div>
-                <div class="busca__categoria">
-                    <div class="busca__categoria--icone">
-                        <span class="material-symbols-outlined">
+                        <strong class="busca__categoria--nome">Transfer</strong>
+                    </a>
+                </li>
+                <li class="busca__categoria">
+                    <a href="#" class="busca__categoria--botao">
+                        <span class="material-symbols-outlined" aria-label="Buscar por Seguro Viagem">
                             vpn_lock
                         </span>
-                    </div>
-                    <b class="busca__categoria--nome">Seguro Viagem</b>
-                </div>
-            </div>
-        </div>
+                        <strong class="busca__categoria--nome">Seguro Viagem</strong>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-        <div class="destinos">
-            <div class="destinos__titulo">
-                <div class="destinos__titulo--texto">Destinos Populares</div>
-                <div class="destinos__titulo--sublinhado"></div>
-            </div>
-            <div class="destinos__lista">
-                <div class="destinos__item">
+        <section class="destinos">
+            <header class="destinos__titulo">
+                <h3 class="destinos__titulo--texto">Destinos Populares</h3>
+                <hr class="destinos__titulo--sublinhado" aria-hidden="true">
+            </header>
+            <ul class="destinos__lista">
+                <li class="destinos__item">
                     <img class="destinos__item--image" alt="" src="./img/tokyo@2x.png" />
-                    <b class="destinos__item--nome">Tokyo</b>
-                    <div class="destinos__item--descricao">
+                    <strong class="destinos__item--nome">Tokyo</strong>
+                    <p class="destinos__item--descricao">
                         Tóquio é uma cidade vibrante e cosmopolita, com seus templos
                         históricos, museus de arte moderna e arranha-céus icônicos.
                         Não perca a chance de mergulhar em sua atmosfera fascinante.
-                    </div>
-                    <div class="destinos__item--botao-container">
+                    </p>
+                    <a href="#" class="destinos__item--botao-container"
+                        aria-label="Ver detalhes do destino popular Tokyo">
                         <div class="destinos__item--botao">
                             <span class="destinos__item--botao-texto">Ver detalhes</span>
                         </div>
-                    </div>
-                </div>
-                <div class="destinos__item">
+                    </a>
+                </li>
+                <li class="destinos__item">
                     <img class="destinos__item--image" alt="" src="./img/osaka@2x.png" />
-                    <b class="destinos__item--nome">Osaka</b>
-                    <div class="destinos__item--descricao">
-                        Osaka é uma cidade agitada e moderna no Japãos. A cidade é
+                    <strong class="destinos__item--nome">Osaka</strong>
+                    <p class="destinos__item--descricao">
+                        Osaka é uma cidade agitada e moderna no Japão. A cidade é
                         famosa por sua gastronomia deliciosa e por ser um excelente
                         ponto de partida para explorar outras cidades japonesas
                         próximas.
-                    </div>
+                    </p>
                     <div class="destinos__item--botao-container">
-                        <div class="destinos__item--botao">
+                        <a href="#" class="destinos__item--botao" aria-label="Ver detalhes do destino popular Osaka">
                             <span class="destinos__item--botao-texto">Ver detalhes</span>
-                        </div>
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
+                </li>
+            </ul>
+        </section>
 
 
-        <div class="pagamento">
-            <div class="pagamento__titulo">
-                <div class="pagamento__titulo--texto">Condições de Pagamento</div>
-                <div class="pagamento__titulo--sublinhado"></div>
-            </div>
-            <div class="pagamento__condicoes">
+        <section class="pagamento">
+            <header class="pagamento__titulo">
+                <h3 class="pagamento__titulo--texto">Condições de Pagamento</h3>
+                <hr class="pagamento__titulo--sublinhado" aria-hidden="true">
+            </header>
+            <article class="pagamento__condicoes">
                 <div class="pagamento__condicoes--descricao">
-                    <dov class="pagamento__condicoes--destaque">Parcelamento em até 12x!</dov>
-                    <div class="pagamento__condicoes--detalhes">
+                    <strong class="pagamento__condicoes--destaque">Parcelamento em até 12x!</strong>
+                    <p class="pagamento__condicoes--detalhes">
                         Viaje pagando em até 12 parcelas no cartão, à vista no crédito
                         com 5% de desconto ou no Pix com 10% de desconto!
-                    </div>
+                    </p>
                 </div>
                 <div class="pagamento__imagens">
                     <div class="pagamento__imagens--grupo">
-                        <div class="pagamento__imagens--imagem-container">
-                            <img class="pagamento__imagens--imagem" alt="" src="./img/montagem-japo-1@2x.png" />
-                        </div>
-                        <div class="pagamento__imagens--imagem-container">
-                            <img class="pagamento__imagens--imagem" alt="" src="./img/montagem-japo-2@2x.png" />
-                        </div>
+                        <figure class="pagamento__imagens--imagem-container">
+                            <img class="pagamento__imagens--imagem" alt="Imagem de malas arrumadas para uma viagem"
+                                src="./img/montagem-japo-1@2x.png" />
+                        </figure>
+                        <figure class="pagamento__imagens--imagem-container">
+                            <img class="pagamento__imagens--imagem" alt="Imagem de passaportes dos viajantes"
+                                src="./img/montagem-japo-2@2x.png" />
+                        </figure>
                     </div>
-                    <div class="pagamento__imagens--imagem-destaque">
-                        <img class="pagamento__imagens--imagem" alt="" src="./img/montagem-japo-3@2x.png" />
-                    </div>
+                    <figure class="pagamento__imagens--imagem-destaque">
+                        <img class="pagamento__imagens--imagem" alt="Duas mulheres com um destino turístico ao fundo"
+                            src="./img/montagem-japo-3@2x.png" />
+                    </figure>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
 
-        <div class="depoimentos">
-            <div class="depoimentos__titulo">
-                <b class="depoimentos__titulo--texto">Depoimentos</b>
-                <div class="depoimentos__titulo--sublinhado"></div>
-            </div>
-            <div class="depoimentos__wrapper">
+        <section class="depoimentos">
+            <header class="depoimentos__titulo">
+                <h3 class="depoimentos__titulo--texto">Depoimentos</h3>
+                <hr class="depoimentos__titulo--sublinhado" aria-hidden="true">
+            </header>
+            <article class="depoimentos__wrapper">
                 <div class="depoimentos__item">
-                    <div class="depoimentos__texto">
+                    <p class="depoimentos__texto">
                         A Jornada foi uma das melhores agências de viagens que eu
                         já experimentei. O serviço ao cliente foi excepcional, e
                         toda a equipe foi muito atenciosa e prestativa.
-                    </div>
-                    <div class="depoimentos__autor">
-                        <img class="depoimentos__autor--foto" src="./img/ellipse-1@2x.png" />
+                    </p>
+                    <footer class="depoimentos__autor">
+                        <img class="depoimentos__autor--foto" alt="Foto de perfil da Talita Villas Boas"
+                            src="./img/ellipse-1@2x.png" />
                         <div class="depoimentos__autor--info">
-                            <b class="depoimentos__autor--nome">Talita Villas Boas</b>
-                            <div class="depoimentos__autor--avaliacao">
-                                <img class="depoimentos__autor--avaliacao-estrela" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" src="./img/star-1.svg" />
+                            <strong class="depoimentos__autor--nome">Talita Villas Boas</strong>
+                            <div class="depoimentos__autor--avaliacao" aria-label="Avaliação de 5 estrelas" role="img">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Uma estrela"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Duas estrelas"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Três estrelas"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Quatro estrelas"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Cinco estrelas"
+                                    src="./img/star-1.svg">
                             </div>
                         </div>
-                    </div>
+                    </footer>
                 </div>
                 <div class="depoimentos__item">
-                    <div class="depoimentos__texto">
+                    <p class="depoimentos__texto">
                         Recomendo fortemente a agência de viagens Jornada. Eles
                         oferecem um serviço personalizado e de alta qualidade que
                         excedeu minhas expectativas em minha última viagem.
-                    </div>
-                    <div class="depoimentos__autor">
-                        <img class="depoimentos__autor--foto" alt="" src="./img/avatar-amari@2x.png" />
+                    </p>
+                    <footer class="depoimentos__autor">
+                        <img class="depoimentos__autor--foto" alt="Foto de perfil de Amari Salin"
+                            src="./img/avatar-amari@2x.png" />
                         <div class="depoimentos__autor--info">
-                            <b class="depoimentos__autor--nome">Amari Salin</b>
-                            <div class="depoimentos__autor--avaliacao">
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
+                            <strong class="depoimentos__autor--nome">Amari Salin</strong>
+                            <div class="depoimentos__autor--avaliacao" aria-label="Avaliação de 5 estrelas" role="img">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Uma estrela"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Duas estrelas"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Três estrelas"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Quatro estrelas"
+                                    src="./img/star-1.svg">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Cinco estrelas"
+                                    src="./img/star-1.svg">
                             </div>
                         </div>
-                    </div>
+                    </footer>
                 </div>
                 <div class="depoimentos__item">
-                    <div class="depoimentos__texto">
+                    <p class="depoimentos__texto">
                         Minha viagem com a Jornada foi incrível! Recomendo muito a
                         agência para quem busca uma experiência emocionante e
                         personalizada.
-                    </div>
-                    <div class="depoimentos__autor">
-                        <img class="depoimentos__autor--foto" alt="" src="./img/avatar-lauro@2x.png" />
+                    </p>
+                    <footer class="depoimentos__autor">
+                        <img class="depoimentos__autor--foto" alt="Foto de perfil de Lauro B. Matos "
+                            src="./img/avatar-lauro@2x.png" />
                         <div class="depoimentos__autor--info">
-                            <b class="depoimentos__autor--nome">Lauro B. Matos</b>
-                            <div class="depoimentos__autor--avaliacao">
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
-                                <img class="depoimentos__autor--avaliacao-estrela" alt="" src="./img/star-1.svg" />
+                            <strong class="depoimentos__autor--nome">Lauro B. Matos</strong>
+                            <div class="depoimentos__autor--avaliacao" aria-label="Avaliação de 5 estrelas" role="img">
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Uma estrela"
+                                    src="./img/star-1.svg" />
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Duas estrelas"
+                                    src="./img/star-1.svg" />
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Três estrelas"
+                                    src="./img/star-1.svg" />
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Quatro estrelas"
+                                    src="./img/star-1.svg" />
+                                <img class="depoimentos__autor--avaliacao-estrela" alt="Cinco estrelas"
+                                    src="./img/star-1.svg" />
                             </div>
                         </div>
-                    </div>
+                    </footer>
                 </div>
 
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 
     <img class="pre-footer__image" alt="" src="./img/pre-footer-image.png" />
-    
-    <div class="footer__container">
+
+    <footer class="footer__container">
         <div class="footer">
             <div class="footer__logo-container">
                 <img class="footer__logo-icon" alt="" src="./img/logobranco-1@2x.png" />
@@ -319,7 +377,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 
 </body>
